@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>project2</title>
+	<script type="text/javascript" src="project2.js">
+		
+	</script>
+	<link rel="stylesheet" type="text/css" href="project2.css">
+	<style type="text/css">
+		.errorspan
+		{
+			color:red;
+		}
+	</style>
+</head>
+<body>
+	<form name="form1" method="get" onsubmit="return validation();" action="project.html">
+		<div class="whole">
+			<h3>Step 1:Your Details</h3>
+            <div class="Each">
+			Name:<input type="text" id="namefirst" placeholder="First and last name ">
+			 <span class="errorspan" id="namen"></span><br>
+		    </div>
+		    <div class="Each">
+			Email:<input type="Email"  id="emailfirst" placeholder="example@domain.com">
+			<span class="errorspan" id="emailn"></span><br>
+		</div>
+		<div class="Each">
+			Phone:<input type="number" placeholder="Eg.7898321478" id="num1">
+			<span class="errorspan" id="nums"></span>
+		</div>
+			<h3>Step 2:Delivery Address</h3>
+			<div class="Each">
+			Address:<textarea length="20" width="30">  </textarea><br>
+		</div>
+		<div class="Each">
+			Post Code:<input type="text" id="coden">
+			<span class="errorspan" id="codes"></span><br>
+		</div>
+		<div class="Each">
+			Country:<input type="text" id="countryn">
+			<span class="errorspan" id="countrys"></span><br>
+		</div>
+			<h3>Step 3:Card Details</h3>
+			<div class="Each" id="chooses">
+			card type
+			<input type="radio" name=""> VISA
+			<input type="radio" name="">AmEx
+			<input type="radio" name="">Mastercard
+			<span class="errorspan" id="chosen"></span><br>
+		</div>
+		<div class="Each">
+			card number:<input type="text" id="crnod">
+			<span class="errorspan" id="crno"></span><br>
+		</div>
+		<div class="Each">
+			security code:<input type="text"><br>
+			
+		</div>
+		<div class="Each">
+			Name on card:<input type="text" placeholder=" Exact name as on card" id="crname">
+			<span class="errorspan" id="namee"></span><br>
+		</div> 
+		
+		
+			<button class="buttonStyle">BUY IT !</button>
+
+		
+
+	</form>
+
+</body>
+</html>
